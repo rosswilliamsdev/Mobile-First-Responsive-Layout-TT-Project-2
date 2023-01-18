@@ -5,17 +5,30 @@ font-family: 'Open Sans', sans-serif;
 
 * {
     box-sizing: border-box;
+        color: #4A4A4A;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     text-align: center;
+    background-color: #FAFAFA;
 }
 
-header {
+nav {
     display: flex;
     flex-direction: column;
+}
+
+#Portfolio {
+    background-color: white;
+}
+
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+
 }
 
 h1 {
@@ -24,13 +37,16 @@ h1 {
 }
 
 ul {
+    display: flex;
     padding: 0;
 }
 
 li {
     list-style-type: none;
     align-items: center;
-
+    background-color: white;
+    margin: .5em 1em;
+    padding: .5em;
 }
 
 .intro-p {
@@ -39,7 +55,10 @@ li {
 
 img {
     margin: auto;
-    width: 17em;
+    width: 18em;
+}
+#profile-img {
+    width: 13em;
 }
 section {
         display: flex;
@@ -50,10 +69,8 @@ section {
 }
 
 #Contact {
-    padding: 2em;
+    padding: 1em;
 }
-
-
 
 
 
@@ -62,5 +79,15 @@ section {
 }
 
 @media screen and (min-width: 1024px) {
-    
+
+    nav, footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    li, .back-to-top {
+
+    }
+    h1, .footer-name {
+
+    }
 }
