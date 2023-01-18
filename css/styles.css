@@ -6,3 +6,61 @@ font-family: 'Open Sans', sans-serif;
 * {
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: auto;
+    padding-top: 1em;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    align-items: center;
+
+}
+
+.intro-p {
+    padding: 20px;
+}
+
+img {
+    margin: auto;
+    width: 17em;
+}
+section {
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+#Contact {
+    padding: 2em;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
