@@ -11,9 +11,10 @@ font-family: 'Roboto', sans-serif;
 
 body {
     font-family: 'Open Sans', sans-serif;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
     background-color: #FAFAFA;
+    max-width: 1024px;
 }
 
 h1, h2, h3 {
@@ -22,7 +23,7 @@ h1, h2, h3 {
 
 nav {
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
 
 }
 
@@ -40,7 +41,7 @@ a {
 h1 {
     margin: auto;
     padding-top: 1em;
-        flex-direction: column;
+    flex-direction: column;
 
 }
 
@@ -71,13 +72,13 @@ img {
 #profile-img {
     width: 13em;
 }
-section {
-        display: flex;
+/* .home, .portfolio, .contact {
+    display: flex;
     align-items: center;
     flex-direction: column;
     margin: auto;
 
-}
+} */
 
 #Contact {
     padding: 1em;
@@ -87,10 +88,22 @@ section {
 
 @media screen and (min-width: 768px) {
         nav, ul {
-            display: flex;
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+    #home {
+        display: flex;
+        flex-direction: row;
+    }
+    #profile-img {
+        order: 2;
+        align-items: flex-start;
+    }
+    .intro-p {
+        order: 1;
+    }
+
     li {
         background-color: #FAFAFA;
     }
