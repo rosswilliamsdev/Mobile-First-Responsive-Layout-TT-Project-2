@@ -1,11 +1,12 @@
 /* 
 ---------FONTS------------
-font-family: 'Open Sans', sans-serif; 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
 */
 
 * {
     box-sizing: border-box;
-        color: #4A4A4A;
+    color: #4A4A4A;
 }
 
 body {
@@ -15,9 +16,14 @@ body {
     background-color: #FAFAFA;
 }
 
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
 nav {
     display: flex;
-    flex-direction: column;
+        flex-direction: column;
+
 }
 
 #Portfolio {
@@ -34,11 +40,16 @@ a {
 h1 {
     margin: auto;
     padding-top: 1em;
+        flex-direction: column;
+
 }
 
 ul {
     display: flex;
+        flex-direction: column;
+
     padding: 0;
+
 }
 
 li {
@@ -75,19 +86,24 @@ section {
 
 
 @media screen and (min-width: 768px) {
-    
+        nav, ul {
+            display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    li {
+        background-color: #FAFAFA;
+    }
+    h1 {
+        align-items: flex-start;
+        margin: 0 auto 0 2em;
+    } 
+
+    footer a, footer h3 {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1024px) {
 
-    nav, footer {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    li, .back-to-top {
-
-    }
-    h1, .footer-name {
-
-    }
 }
