@@ -13,9 +13,10 @@
         <header>
             <nav>
             <h1 href="#">Ross Williams</h1>
-            <ul>
+            <ul class="top-nav">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#Portfolio">PORTFOLIO</a></li>
+                <li><a href="#Skills">SKILLS</a></li>
                 <li><a href="#Contact">CONTACT</a></li>
             </ul>
         </nav>
@@ -26,27 +27,55 @@
                 Welcome! I am a front-end developer who specializes in responsive design and css. I'll soon have a degree in front-end web development from Team Treehouse that I'm very excited to put to use!
             </p>
         </section>
-        <section id="Portfolio" class="portfolio">
+        <section id="Portfolio">
             <h2>Portfolio</h2>
+            <div class="portfolio-wrap">
+            <div class="portfolio one">
             <img src="/images/portfolio-1.png">
             <h3>Marketing Page</h3>
-            <p>Description</p>
+            <p>This project shows the front page of a marketing business I'm interested in.</p>
+            </div>
+            <div class="portfolio two">
             <img src="/images/portfolio-2.png">
             <h3>Search Page</h3>
-            <p>Description</p> 
-            <img src="/images/portfolio-3.png">
+            <p>This is a search engine for a database.</p> 
+            </div>
+            <div class="portfolio three">
+                            <img src="/images/portfolio-3.png">
             <h3>Travel App</h3>
-            <p>Description</p>
-            <img src="/images/portfolio-4.png">
+            <p>This app compares travel times across different methods and recommends the best one.</p>
+            </div>
+            <div class="portfolio four">
+                <img src="/images/portfolio-4.png">
             <h3>Map of Favorite Spots</h3>
-            <p>Description</p>      
-            <img src="/images/portfolio-5.png">
+            <p>This uses mapping apis to plot all my favorite spots in town for a diy walking tour.</p>    
+            </div>  
+            <div class="portfolio five">
+                <img src="/images/portfolio-5.png">
             <h3>Photo Gallery</h3>
-            <p>Description</p>        
-            <img src="/images/portfolio-6.png">
+            <p>Some of my favorite photos from a recent vacation. Users can interact with the collection.</p>  
+            </div>      
+            <div class="portfolio six">
+                <img src="/images/portfolio-6.png">
             <h3>Calculator</h3>
-            <p>Description</p>
+            <p>Enter a math problem, and this calculator will return the result.</p>
+            </div>
+            </div>
         </section>
+        <section id="Skills" class="skills">
+            <h2>Skills</h2>
+            <ul class="languages">As a Front End Web Developer I specialize in:
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+            <ul class="soft-skills">With my teaching experience and psychology degree I am excellent at:
+                <li>Breaking the complex into its core components</li>
+                <li>Coordinating teams</li>
+                <li>Administrative tasks</li>
+            </ul>
+        </section>
+        
         <section id="Contact" class="contact">
             <h2>Contact</h2>
             <p>If you would like to work together, reach out! I'd love to hear about your project and tell you how I can help.</p>
@@ -55,9 +84,19 @@
                 <p>Email:  <strong>rwillguitar@gmail.com</strong></p>
             </div>
         </section>
+        <hr>
+        </div>
         <footer>
-        <span><h3 class="footer-name">Ross Williams</h3>
-        <a href="#"><strong>BACK TO TOP</strong></a></span>
+        <nav>
+            <h1 href="#">Ross Williams</h1>
+            <ul class="footer-nav">
+                <li class="top"><a href="#">BACK TO TOP</a></li>
+                <li class="full"><a href="#Home">HOME</a></li>
+                <li class="full"><a href="#Portfolio">PORTFOLIO</a></li>
+                <li class="full"><a href="#Skills">SKILLS</a></li>
+                <li class="full"><a href="#Contact">CONTACT</a></li>
+            </ul>
+        </nav>
         </footer>
     </body>
 </html>

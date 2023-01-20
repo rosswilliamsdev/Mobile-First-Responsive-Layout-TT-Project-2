@@ -4,7 +4,12 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 
+
+/* -------------------- GENERAL FORMATTING---------------------- */
+
 * {
+      margin: 0;
+  padding: 0;
     box-sizing: border-box;
     color: #4A4A4A;
 }
@@ -12,111 +17,144 @@ font-family: 'Roboto', sans-serif;
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
-    text-align: center;
     background-color: #FAFAFA;
     max-width: 1024px;
+    min-height: 100vh;
+      display: flex;
+  flex-direction: column;
+
 }
 
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-
-}
-
-#Portfolio {
-    background-color: white;
-}
-
-
-a {
-    text-decoration: none;
-    font-weight: 700;
-
-}
-
-h1 {
-    margin: auto;
-    padding-top: 1em;
-    flex-direction: column;
-
-}
-
-ul {
-    display: flex;
-        flex-direction: column;
-
-    padding: 0;
-
-}
-
-li {
-    list-style-type: none;
-    align-items: center;
-    background-color: white;
-    margin: .5em 1em;
-    padding: .5em;
-}
-
-.intro-p {
-    padding: 20px;
+h2, h3 {
+    text-align: center;
 }
 
 img {
     margin: auto;
     width: 18em;
 }
+
+ul {
+  list-style: none;
+    padding-left: 0;
+
+}
+
+/* ------------------NAVBAR TOP AND BOTTOM---------------------- */
+
+nav {
+    letter-spacing: .25em;
+    padding: 25px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+h1, .top-nav {
+  text-align: center;
+}
+
+.top-nav, .top-nav li {
+  width: 100%;
+}
+.top-nav {
+  margin-top: 30px;
+}
+
+.top-nav li {
+  padding: 10px 0;
+  margin: 5px auto;
+}
+/* --------------------INTRO SECTION---------------------- */
+
+.intro-p {
+    padding: 20px;
+}
+
 #profile-img {
     width: 13em;
 }
-/* .home, .portfolio, .contact {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
 
-} */
+/* -------------------PORTFOLIO SECTION--------------------- */
+
+#Portfolio {
+    background-color: white;
+}
+
+/* --------------------CONTACT SECTION---------------------- */
 
 #Contact {
     padding: 1em;
+    text-align: center
+}
+
+/* ---------------------FOOTER SECTION---------------------- */
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 0 20px;
+  height: 100px;
 }
 
 
+.full {
+    display: none;
+}
+
+/* ---------------------MEDIA QUERIES----------------------- */
 
 @media screen and (min-width: 768px) {
-        nav, ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+
+    /* --------------GENERAL FORMATTING----------------- */
+    li {
+        background-color: #FAFAFA;
     }
-    #home {
+    /* --------------NAVBAR TOP AND BOTTOM----------------  */
+
+      .top {
+    display: none;
+  }
+  .full {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+
+
+    /* ---------------INTRO/HOME SECTION------------------ */
+    .home {
         display: flex;
         flex-direction: row;
+        font-size: 1.25em;
     }
     #profile-img {
         order: 2;
-        align-items: flex-start;
+        width: auto;
     }
     .intro-p {
         order: 1;
     }
-
-    li {
-        background-color: #FAFAFA;
+    /* -----------------PORTFOLIO SECTION--------------- */
+    .portfolio-wrap {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
-    h1 {
-        align-items: flex-start;
-        margin: 0 auto 0 2em;
-    } 
-
-    footer a, footer h3 {
-        display: none;
+    .portfolio {
+        text-align: center;
+        max-width: 300px;
     }
 }
 
 @media screen and (min-width: 1024px) {
-
-}
+  }
