@@ -119,6 +119,22 @@ footer {
         background-color: #FAFAFA;
     }
     /* --------------NAVBAR TOP AND BOTTOM----------------  */
+    h1 {
+        width: 30%; /* To fit my full name inline */
+    }
+      .top-nav {
+    margin-top: 0;
+  }
+
+  .top-nav li {
+    display: inline-block;
+    width: auto;
+    margin-right: 15px;
+  }
+
+  .top-nav li:last-child {
+    margin-right: 0;
+  }
 
       .top {
     display: none;
@@ -157,4 +173,9 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+      nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   }
