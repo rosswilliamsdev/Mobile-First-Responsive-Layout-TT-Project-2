@@ -120,10 +120,12 @@ footer {
     }
     /* --------------NAVBAR TOP AND BOTTOM----------------  */
     h1 {
-        width: 30%; /* To fit my full name inline */
+        display: inline-block;
+        width: 50%;
     }
       .top-nav {
     margin-top: 0;
+    margin-left: 15em;
   }
 
   .top-nav li {
