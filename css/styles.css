@@ -172,16 +172,19 @@ footer nav {
         background-color: #FAFAFA;
     }
     /* --------------NAVBAR TOP AND BOTTOM----------------  */
+    header nav {
+        display: block;
+        text-align: center;
+    }
+    
     nav {
         border-radius: .25em;
     }
     header h1 {
         display: inline-block;
-        width: 50%;
     }
     .top-nav {
-        margin-top: 0;
-        margin-left: 15em;
+        margin: auto;
   }
 
    .top-nav li {
@@ -195,7 +198,7 @@ footer nav {
   }
 
   .top {
-        display: none;
+        /* display: none; */
   }
   footer nav {
     font-size: .8em;
