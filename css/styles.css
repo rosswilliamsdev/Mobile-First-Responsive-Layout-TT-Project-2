@@ -234,12 +234,20 @@ footer nav {
 }
 
 @media screen and (min-width: 1024px) {
-  nav {
+  header nav, footer nav {
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
     flex-wrap: nowrap;
   }
+  header h1 {
+    width: 50%;
+  }
+
+  .top-nav {
+    margin-left: 30%;
+  }
+
   .top {
     display: none;
   }
