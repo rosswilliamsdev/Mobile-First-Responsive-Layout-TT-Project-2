@@ -104,6 +104,7 @@ h1, .top-nav {
 }
 
 #profile-img {
+    padding-top: 1em;
     width: 13em;
 }
 
