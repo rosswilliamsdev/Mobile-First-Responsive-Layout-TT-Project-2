@@ -33,6 +33,7 @@ h2, h3, p {
 }
 
 img {
+    display:block;
     margin: auto;
     width: 18em;
 }
@@ -119,6 +120,18 @@ h1, .top-nav {
     padding: 1em;
     text-align: center
 }
+
+/* ---------------------SKILLS SECTION---------------------- */
+
+.skills-wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    text-align: center;
+}
+
 
 /* ---------------------FOOTER SECTION---------------------- */
 
