@@ -11,7 +11,6 @@ font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #4A4A4A;
 }
 
 body {
@@ -22,14 +21,14 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
 }
 
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
 }
 
-h2, h3 {
+h2, h3, p {
     text-align: center;
 }
 
@@ -43,18 +42,40 @@ ul {
     padding-left: 0;
 
 }
+hr {
+    opacity: 25%;
+}
+
+section h2 {
+    padding: 30px;
+}
 
 /* ------------------NAVBAR TOP AND BOTTOM---------------------- */
 
+h1 {
+    color: white;
+}
+
+header h1 {
+    margin-top: 15px;
+}
+
 nav {
+    background-color: #818D92;
     letter-spacing: .25em;
     padding: 25px;
+    border-radius: .25em;
 }
 
 a {
     text-decoration: none;
     font-weight: 700;
 }
+
+a:visited{
+    color:white;
+}
+
 h1, .top-nav {
     text-align: center;
 }
@@ -70,8 +91,11 @@ h1, .top-nav {
     padding: 10px 0;
     margin: 5px auto;
 }
+.top-nav li, .footer-nav li {
+    background-color: transparent;
+    color: white;
+}
 /* --------------------INTRO SECTION---------------------- */
-
 .intro-p {
     padding: 20px;
 }
@@ -84,6 +108,9 @@ h1, .top-nav {
 
 #Portfolio {
     background-color: white;
+}
+.portfolio-wrap {
+    margin: auto;
 }
 
 /* --------------------CONTACT SECTION---------------------- */
@@ -103,6 +130,7 @@ footer {
   margin-top: auto;
   padding: 0 20px;
   height: 100px;
+  flex-wrap: nowrap;
 }
 
 .full {
@@ -174,7 +202,8 @@ footer {
   nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
+    flex-wrap: nowrap;
   }
   .top {
     display: none;
