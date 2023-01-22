@@ -53,6 +53,10 @@ section h2 {
 
 /* ------------------NAVBAR TOP AND BOTTOM---------------------- */
 
+header {
+    font-size: .9em;
+}
+
 h1 {
     color: white;
 }
@@ -67,7 +71,7 @@ header h1 {
 
 nav {
     letter-spacing: .25em;
-    padding: 25px;
+    padding: 15px;
 }
 
 a {
@@ -125,20 +129,30 @@ padding: 1em 0 .5em 0;
 
 /* --------------------CONTACT SECTION---------------------- */
 
-#Contact {
+.contact {
     padding: 1em;
-    text-align: center
+    text-align: center;
+}
+
+.contact p {
+    font-size: 1.1em;
 }
 
 /* ---------------------SKILLS SECTION---------------------- */
 
 .skills-wrap {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+}
+
+.skills {
+        font-size: 1.1em;
 }
 
 .card {
     text-align: center;
+    line-height: 2em;
 }
 
 
@@ -220,6 +234,7 @@ footer nav {
     }
     .intro-p {
         order: 1;
+        text-align: left;
     }
     /* -----------------PORTFOLIO SECTION--------------- */
     .portfolio-wrap {
@@ -232,13 +247,24 @@ footer nav {
         text-align: center;
         max-width: 300px;
     }
+
+/* --------------------SKILLS----------------- */
+
+.skills-wrap {
+    flex-direction: row;
+}
+
+/* ---------------------CONTACT------------------------ */
+    .contact {
+        margin: auto 10em auto 10em;
+        line-height: 2em;
+    }
 }
 
 @media screen and (min-width: 1024px) {
   header nav, footer nav {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     flex-wrap: nowrap;
   }
   header h1 {
