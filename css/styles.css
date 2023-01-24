@@ -77,6 +77,7 @@ nav {
 a {
     text-decoration: none;
     font-weight: 700;
+    color: white;
 }
 
 a:visited{
@@ -213,14 +214,14 @@ footer nav {
   }
 
   .top {
-        /* display: none; */
+        display: none;
   }
   footer nav {
     font-size: .8em;
   }
   .full {
         margin-left: 20px;
-
+        display: inline-block;
   }
     /* ---------------INTRO/HOME SECTION------------------ */
     .home {
@@ -280,9 +281,6 @@ footer nav {
   }
   footer {
     font-size: .75em;
-  }
-  .full {
-    display: inline-block;
   }
   .footer-nav {
     margin-left: 30em;
